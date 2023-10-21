@@ -1,0 +1,123 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "PCstore API",
+    "description": "API documentation",
+    "version": "v1"
+  },
+  "host": "10.2.12.27:80",
+  "schemes": [
+    "http"
+  ],
+  "basePath": "/",
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "securityDefinitions": {
+    "Basic": {
+      "type": "basic"
+    }
+  },
+  "security": [
+    {
+      "Basic": []
+    }
+  ],
+  "paths": {
+    "/parts/": {
+      "get": {
+        "operationId": "parts_list",
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "parts"
+        ]
+      },
+      "put": {
+        "operationId": "parts_update",
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "parts"
+        ]
+      },
+      "parameters": []
+    },
+    "/parts/{id}/": {
+      "get": {
+        "operationId": "parts_read",
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "parts"
+        ]
+      },
+      "post": {
+        "operationId": "parts_create",
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "201": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "parts"
+        ]
+      },
+      "patch": {
+        "operationId": "parts_partial_update",
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "parts"
+        ]
+      },
+      "delete": {
+        "operationId": "parts_delete",
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "204": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "parts"
+        ]
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "type": "string"
+        }
+      ]
+    }
+  },
+  "definitions": {}
+}
